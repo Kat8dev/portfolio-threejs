@@ -14,7 +14,7 @@ import { useEffect, useRef } from 'react';
 import { useGLTF } from '@react-three/drei';
 import { useFrame, useThree } from '@react-three/fiber';
 
-import islandScene from '../assets/3d/tree_house.glb';
+import islandScene from '../assets/3d/island.glb';
 
 export function Island({
   isRotating,
@@ -178,67 +178,35 @@ export function Island({
   return (
     // {Island 3D model from: https://sketchfab.com/3d-models/foxs-islands-163b68e09fcc47618450150be7785907}
     <a.group ref={islandRef} {...props}>
+      <mesh
+        geometry={nodes.polySurface944_tree_body_0.geometry}
+        material={materials.PaletteMaterial001}
+      />
+      <mesh
+        geometry={nodes.polySurface945_tree1_0.geometry}
+        material={materials.PaletteMaterial001}
+      />
+      <mesh
+        geometry={nodes.polySurface946_tree2_0.geometry}
+        material={materials.PaletteMaterial001}
+      />
+      <mesh
+        geometry={nodes.polySurface947_tree1_0.geometry}
+        material={materials.PaletteMaterial001}
+      />
+      <mesh
+        geometry={nodes.polySurface948_tree_body_0.geometry}
+        material={materials.PaletteMaterial001}
+      />
+      <mesh
+        geometry={nodes.polySurface949_tree_body_0.geometry}
+        material={materials.PaletteMaterial001}
+      />
+      <mesh
+        geometry={nodes.pCube11_rocks1_0.geometry}
+        material={materials.PaletteMaterial001}
+      />
       
-      <mesh
-        geometry={nodes.TreeHouse_Balloons_0.geometry}
-        material={materials.Balloons}
-        rotation={[Math.PI / 2, 0, 0]}
-      />
-      <mesh
-        geometry={nodes.TreeHouse_Building_0.geometry}
-        material={materials.Building}
-        rotation={[Math.PI / 2, 0, 0]}
-      />
-      <mesh
-        geometry={nodes.TreeHouse_Blu_roof_no_bricks_0.geometry}
-        material={materials.Blu_roof_no_bricks}
-        rotation={[Math.PI / 2, 0, 0]}
-      />
-      <mesh
-        geometry={nodes.TreeHouse_Floor_0.geometry}
-        material={materials.Floor}
-        rotation={[Math.PI / 2, 0, 0]}
-      />
-      <mesh
-        geometry={nodes.TreeHouse_Tree_0.geometry}
-        material={materials.Tree}
-        rotation={[Math.PI / 2, 0, 0]}
-      />
-      <mesh
-        geometry={nodes.TreeHouse_Stairs_0.geometry}
-        material={materials.Stairs}
-        rotation={[Math.PI / 2, 0, 0]}
-      />
-      <mesh
-        geometry={nodes.TreeHouse_Blu_bricks_0.geometry}
-        material={materials.Blu_bricks}
-        rotation={[Math.PI / 2, 0, 0]}
-      />
-      <mesh
-        geometry={nodes.TreeHouse_Frames_0.geometry}
-        material={materials.Frames}
-        rotation={[Math.PI / 2, 0, 0]}
-      />
-      <mesh
-        geometry={nodes.TreeHouse_Fence_0.geometry}
-        material={materials.Fence}
-        rotation={[Math.PI / 2, 0, 0]}
-      />
-      <mesh
-        geometry={nodes.TreeHouse_Gold_0.geometry}
-        material={materials.Gold}
-        rotation={[Math.PI / 2, 0, 0]}
-      />
-      <mesh
-        geometry={nodes.TreeHouse_Curtains_0.geometry}
-        material={materials.Curtains}
-        rotation={[Math.PI / 2, 0, 0]}
-      />
-      <mesh
-        geometry={nodes.TreeHouse_Windows_0.geometry}
-        material={materials.Windows}
-        rotation={[Math.PI / 2, 0, 0]}
-      />
     </a.group>
   );
 }

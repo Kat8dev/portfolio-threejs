@@ -97,7 +97,8 @@ const Home = () => {
             setIsRotating={setIsRotating}
             setCurrentStage={setCurrentStage}
             position={islandPosition}
-            rotation={[Math.PI, 0, 0]}
+            /* rotation={[Math.PI, 0, 0]} */
+            rotation={[0.1, 4.7077, 0]}
             scale={islandScale}
           />
           {/* <Plane
